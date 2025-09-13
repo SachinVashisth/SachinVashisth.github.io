@@ -21,8 +21,30 @@
     }
     h1 {margin-bottom: 0.2em;}
     .links a {margin-right: 1em; text-decoration: none; color: #0366d6;}
-    ul.papers {list-style: none; padding-left: 0;}
-    ul.papers li {margin-bottom: 0.7em;}
+
+    /* papers section */
+    ul.papers {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul.papers li {
+      margin-bottom: 2em; /* ⬆️ more space between different papers */
+    }
+    .conference {
+      font-style: italic;
+      margin-bottom: 0.2em; /* ⬇️ reduces space after conference/journal */
+      display: block;
+    }
+    .authors {
+      font-size: 0.9em; /* smaller authors text */
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+      display: block;
+    }
+    .paper-links {
+      font-size: 0.9em; /* smaller links */
+    }
+
     footer {margin-top: 3em; font-size: 0.9em; color: gray;}
   </style>
 </head>
@@ -41,7 +63,6 @@
   </em>
 </p>
 
-
   <div class="links">
     <a href="mailto:sachinvashistha.phdcse@kgpian.iitkgp.ac.in">Email</a>
     <a href="https://scholar.google.com/citations?user=9DFf_lAAAAAJ&hl=en&oi=sra">Google Scholar</a>
@@ -57,26 +78,23 @@
   <ul class="papers">
     <li>
       <strong>SMAB: MAB based word Sensitivity Estimation Framework and its Applications in Adversarial Text Generation</strong>
-      <br>NAACL 2025 Main<br>
-      <br>
-      Saurabh Kumar Pandey*, <strong>Sachin Vashistha*</strong>, Debrup Das, Somak Aditya, Monojit Choudhury<br>
-      <a href="https://aclanthology.org/2025.naacl-long.463.pdf">paper</a> / <a href="https://github.com/skp1999/SMAB">code</a>
+      <span class="conference">NAACL 2025 Main</span>
+      <span class="authors">Saurabh Kumar Pandey*, <strong>Sachin Vashistha*</strong>, Debrup Das, Somak Aditya, Monojit Choudhury</span>
+      <span class="paper-links"><a href="https://aclanthology.org/2025.naacl-long.463.pdf">paper</a> / <a href="https://github.com/skp1999/SMAB">code</a></span>
     </li>
     
     <li>
       <strong>Tricking llms into disobedience: Formalizing, analyzing, and detecting jailbreaks</strong>
-      <br>COLING 2024 Main<br>
-      <br>
-      Abhinav Rao, <strong>Sachin Vashistha</strong>, Atharva Naik, Somak Aditya, Monojit Choudhury<br>
-      <a href="https://aclanthology.org/2024.lrec-main.1462.pdf">paper</a> / <a href="https://github.com/AetherPrior/TrickLLM">code</a>
+      <span class="conference">COLING 2024 Main</span>
+      <span class="authors">Abhinav Rao, <strong>Sachin Vashistha</strong>, Atharva Naik, Somak Aditya, Monojit Choudhury</span>
+      <span class="paper-links"><a href="https://aclanthology.org/2024.lrec-main.1462.pdf">paper</a> / <a href="https://github.com/AetherPrior/TrickLLM">code</a></span>
     </li>
     
     <li>
       <strong>Automated detection of anti-national textual response to terroristic events on online media</strong>
-      <br>Cybernetics and Systems<br>
-      <br>
-      Megha Chaudhary, <strong>Sachin Vashistha</strong>, Divya Bansal<br>
-      <a href="https://www.tandfonline.com/doi/pdf/10.1080/01969722.2022.2044596">paper</a>
+      <span class="conference">Cybernetics and Systems</span>
+      <span class="authors">Megha Chaudhary, <strong>Sachin Vashistha</strong>, Divya Bansal</span>
+      <span class="paper-links"><a href="https://www.tandfonline.com/doi/pdf/10.1080/01969722.2022.2044596">paper</a></span>
     </li>
     
   </ul>
